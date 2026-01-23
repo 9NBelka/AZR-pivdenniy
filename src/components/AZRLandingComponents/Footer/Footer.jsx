@@ -74,8 +74,8 @@ const Footer = ({ onHeaderTextLinks }) => {
               </div> */}
               <div className={styles.contactItem}>
                 <FaPhone className={styles.contactIcon} />
-                <a href='tel:+380661151120' className={styles.contactLink}>
-                  +380 (66) 115-11-20
+                <a href='tel:+380671155120' className={styles.contactLink}>
+                  +380 (67) 115-51-20
                 </a>
               </div>
               <div className={styles.contactItem}>

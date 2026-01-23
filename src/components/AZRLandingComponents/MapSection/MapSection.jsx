@@ -35,7 +35,7 @@ export default function MapSection() {
               </div>
               <div>
                 <h3>Телефони</h3>
-                <a href='tel:+380661151120'> +380 (66) 115-11-20</a>
+                <a href='tel:+380671155120'> +380 (67) 115-51-20</a>
                 {/* <a href='tel:+380933312299'>+380 93 331 22 99</a> */}
               </div>
             </div>

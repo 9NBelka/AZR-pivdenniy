@@ -49,8 +49,8 @@ const Header = ({ onHeaderTextLinks }) => {
           {/* Contact Info & CTA */}
           <div className={styles.contactContainer}>
             <div className={styles.twoPhonesBlock}>
-              <a className={styles.linkToPhone} href='tel:+380661151120'>
-                <FiPhoneCall className={styles.iconPhone} /> +380 (66) 115-11-20
+              <a className={styles.linkToPhone} href='tel:+380671155120'>
+                <FiPhoneCall className={styles.iconPhone} /> +380 (67) 115-51-20
               </a>
             </div>
 
