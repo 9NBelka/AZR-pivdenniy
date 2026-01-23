@@ -92,11 +92,11 @@ export default function PrivacyPolicy() {
           <ul className={scss.list}>
             <li>
               Електронна пошта:{' '}
-              <a href='mailto:support@yourdomain.com' className={scss.link}>
-                support@yourdomain.com
+              <a href='mailto:azr.15ug@gmail.com' className={scss.link}>
+                azr.15ug@gmail.com
               </a>
             </li>
-            <li>Телефон: +380 123 456 789</li>
+            <li>Телефон: +380 (66) 115-11-20</li>
           </ul>
         </div>
       </div>

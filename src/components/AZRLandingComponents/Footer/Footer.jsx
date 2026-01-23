@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaPhone, FaClock, FaEnvelope } from 'react-icons/fa';
 import styles from './Footer.module.scss';
 import { useState } from 'react';
 import { BsFacebook, BsInstagram, BsTelegram } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ onHeaderTextLinks }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -108,12 +109,12 @@ const Footer = ({ onHeaderTextLinks }) => {
             &copy; {currentYear} СТО "АЗР Південний" Харків. Всі права захищені.
           </p>
           <div className={styles.bottomLinks}>
-            <a href='#' className={styles.bottomLink}>
+            <Link to='/privacy-policy' className={styles.bottomLink}>
               Політика конфіденційності
-            </a>
-            <a href='#' className={styles.bottomLink}>
+            </Link>
+            {/* <a href='#' className={styles.bottomLink}>
               Умови використання
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
