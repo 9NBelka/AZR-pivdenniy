@@ -4,6 +4,7 @@ import { LuGauge, LuWrench } from 'react-icons/lu';
 import { RiStethoscopeLine, RiTestTubeLine } from 'react-icons/ri';
 import { MdOutlineCameraAlt } from 'react-icons/md';
 import { IoEyeOutline } from 'react-icons/io5';
+import { BsBoxes, BsBullseye } from 'react-icons/bs';
 
 const diagnostics = [
   {
@@ -22,14 +23,14 @@ const diagnostics = [
     idCard: 'engine-diagnostics',
   },
   {
-    icon: <LuWrench className={styles.cardIcon} />,
+    icon: <BsBoxes className={styles.cardIcon} />,
     title: 'Діагностика перед покупкою',
     description: 'СТО "АЗР Південний" виконує діагностику всіх систем автомобілів.',
     price: 'від 500 грн',
     idCard: 'transmission-diagnostics',
   },
   {
-    icon: <LuWrench className={styles.cardIcon} />,
+    icon: <BsBullseye className={styles.cardIcon} />,
     title: 'Комп`ютерна Діагностика',
     description: 'СТО "АЗР Південний" виконує комп`ютерну діагностику всіх систем автомобілів',
     price: 'від 500 грн',

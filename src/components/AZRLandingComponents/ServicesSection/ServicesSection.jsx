@@ -1,5 +1,15 @@
-import { FaWrench, FaCog, FaBullseye, FaStethoscope, FaDotCircle, FaCar } from 'react-icons/fa';
+import {
+  FaWrench,
+  FaCog,
+  FaBullseye,
+  FaStethoscope,
+  FaDotCircle,
+  FaCar,
+  FaOilCan,
+} from 'react-icons/fa';
 import styles from './ServicesSection.module.scss';
+import { GrAction, GrCycle, GrServices, GrValidate } from 'react-icons/gr';
+import { BsDiagram3, BsDisc } from 'react-icons/bs';
 
 const services = [
   {
@@ -25,7 +35,7 @@ const services = [
     idCard: 'suspension-repair',
   },
   {
-    icon: <FaStethoscope className={styles.cardIcon} />,
+    icon: <FaCar className={styles.cardIcon} />,
     title: 'Заміна амортизаторів',
     description:
       'Наші фахівці точно визначать і замінять вийшли з ладу амортизатори вашого автомобіля',
@@ -33,7 +43,7 @@ const services = [
     idCard: 'electrical-repair',
   },
   {
-    icon: <FaCog className={styles.cardIcon} />,
+    icon: <GrAction className={styles.cardIcon} />,
     title: 'Ремонт електрики',
     description:
       'СТО "АЗР Південний" надає всі види послуг з технічного обслуговування, діагностики та ремонту електрообладнання автомобілів',
@@ -41,7 +51,7 @@ const services = [
     idCard: 'brake-system-repair-and-maintenance',
   },
   {
-    icon: <FaCar className={styles.cardIcon} />,
+    icon: <GrServices className={styles.cardIcon} />,
     title: 'Ремонт двигуна',
     description:
       'СТО "АЗР Південний" виконує роботи будь-якої складності по ремонту бензинових і дизельних двигунів.',
@@ -57,7 +67,7 @@ const services = [
     idCard: 'auto-parts',
   },
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <BsDiagram3 className={styles.cardIcon} />,
     title: 'Ремонт ходової',
     description:
       'Наші фахівці точно визначать і усунуть несправність в підвісці вашого автомобіля.',
@@ -65,7 +75,7 @@ const services = [
     idCard: 'auto-parts',
   },
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <GrValidate className={styles.cardIcon} />,
     title: 'Ремонт системи кондиціонування',
     description:
       'Проводимо діагностику, технічне обслуговування, ремонт і заправку систем кондиціонування легкових і комерційних автомобілів.',
@@ -74,7 +84,7 @@ const services = [
   },
 
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <FaOilCan className={styles.cardIcon} />,
     title: 'Ремонт паливних систем',
     description:
       'Ми надаємо всі види послуг з діагностики та ремонту паливних систем автомобілів в Харкові',
@@ -83,7 +93,7 @@ const services = [
   },
 
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <BsDisc className={styles.cardIcon} />,
     title: 'Ремонт рульового управління',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту рульового управління.',
@@ -92,7 +102,7 @@ const services = [
   },
 
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <GrCycle className={styles.cardIcon} />,
     title: 'Ремонт інжектора',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту систем уприскування палива',
