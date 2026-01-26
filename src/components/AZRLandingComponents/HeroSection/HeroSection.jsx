@@ -45,7 +45,7 @@ const HeroSection = () => {
               document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })
             }>
             {/* <a href='tel:+380733312299' className={styles.primaryButton}></a> */}
-            <a className={styles.primaryButton}>
+            <a className={styles.primaryButton} id='buttonSendToContact'>
               {/* <MdOutlinePhoneInTalk className={styles.buttonIcon} /> */}
               Записатися зараз
             </a>

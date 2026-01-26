@@ -49,12 +49,15 @@ const Header = ({ onHeaderTextLinks }) => {
           {/* Contact Info & CTA */}
           <div className={styles.contactContainer}>
             <div className={styles.twoPhonesBlock}>
-              <a className={styles.linkToPhone} href='tel:+380671155120'>
+              <a className={styles.linkToPhone} href='tel:+380671155120' id='headerPhone'>
                 <FiPhoneCall className={styles.iconPhone} /> +380 (67) 115-51-20
               </a>
             </div>
 
-            <button onClick={() => scrollToSection('contacts')} className={styles.ctaButton}>
+            <button
+              onClick={() => scrollToSection('contacts')}
+              className={styles.ctaButton}
+              id='buttonSendToContact'>
               Записатися
             </button>
           </div>
