@@ -19,21 +19,21 @@ const diagnostics = [
     title: 'Діагностика підвіски',
     description:
       'СТО "АЗР Південний" виконує всі види діагностики ходової частини автомобілів в Харкові',
-    price: 'від 400 грн',
+    price: 'від 500 грн',
     idCard: 'engine-diagnostics',
   },
   {
     icon: <BsBoxes className={styles.cardIcon} />,
     title: 'Діагностика перед покупкою',
     description: 'СТО "АЗР Південний" виконує діагностику всіх систем автомобілів.',
-    price: 'від 500 грн',
+    price: 'від 2000 грн',
     idCard: 'transmission-diagnostics',
   },
   {
     icon: <BsBullseye className={styles.cardIcon} />,
     title: 'Комп`ютерна Діагностика',
     description: 'СТО "АЗР Південний" виконує комп`ютерну діагностику всіх систем автомобілів',
-    price: 'від 500 грн',
+    price: 'від 600 грн',
     idCard: 'electronics-diagnostics',
   },
 ];

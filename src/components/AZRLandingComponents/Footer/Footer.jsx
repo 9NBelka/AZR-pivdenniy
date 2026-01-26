@@ -23,8 +23,7 @@ const Footer = ({ onHeaderTextLinks }) => {
               <img src='./images/AZRImgLogo.png' alt='logo-footer' />
             </div>
             <p className={styles.companyDescription}>
-              Ваш надійний автосервіс у Харкові. Обслуговування авто будь-якої марки! Даємо гарантію
-              на весь регламентний термін
+              Ваш надійний автосервіс у Харкові. Даємо гарантію на весь регламентний термін!
             </p>
             <div className={styles.socialLinks}>
               <a

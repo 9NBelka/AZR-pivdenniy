@@ -21,7 +21,7 @@ const HeroSection = () => {
           </h1>
 
           <p className={styles.subtitle}>
-            Обслуговування авто будь-якої марки з гарантією <strong>3 місяці або 20 000 км</strong>
+            Обслуговування авто з гарантією <strong>3 місяці або 20 000 км</strong>
           </p>
           <p className={styles.secondaryText}>Потрібен ремонт авто, дзвони нам!</p>
 

@@ -9,7 +9,7 @@ export default function MapSection() {
       <div className={scss.container}>
         <div className={scss.header}>
           <h2>Контакти та розташування</h2>
-          <p>Знайдіть нас у зручному місці в центрі Києва</p>
+          <p>Знайдіть нас у зручному місці Харкова</p>
         </div>
         <div className={scss.mapAndTextBlocks}>
           <div className={scss.mapBlock}>
