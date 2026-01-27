@@ -1,21 +1,18 @@
 import styles from './DiagnosticsSection.module.scss';
-import { CiSearch } from 'react-icons/ci';
-import { LuGauge, LuWrench } from 'react-icons/lu';
-import { RiStethoscopeLine, RiTestTubeLine } from 'react-icons/ri';
-import { MdOutlineCameraAlt } from 'react-icons/md';
-import { IoEyeOutline } from 'react-icons/io5';
-import { BsBoxes, BsBullseye } from 'react-icons/bs';
+import { FaSearch, FaCar } from 'react-icons/fa';
+
+import { MdOutlineMonitorHeart, MdOutlineSpeed } from 'react-icons/md';
 
 const diagnostics = [
   {
-    icon: <RiStethoscopeLine className={styles.cardIcon} />,
+    icon: <MdOutlineSpeed className={styles.cardIcon} />,
     title: 'Діагностика двигуна',
     description: 'СТО "АЗР Південний" виконує всі види діагностики бензинових і дизельних двигунів',
     price: 'від 500 грн',
     idCard: 'engine-diagnostics',
   },
   {
-    icon: <LuWrench className={styles.cardIcon} />,
+    icon: <FaSearch className={styles.cardIcon} />,
     title: 'Діагностика підвіски',
     description:
       'СТО "АЗР Південний" виконує всі види діагностики ходової частини автомобілів в Харкові',
@@ -23,14 +20,14 @@ const diagnostics = [
     idCard: 'suspension-diagnostics',
   },
   {
-    icon: <BsBoxes className={styles.cardIcon} />,
+    icon: <FaCar className={styles.cardIcon} />,
     title: 'Діагностика перед покупкою',
     description: 'СТО "АЗР Південний" виконує діагностику всіх систем автомобілів.',
     price: 'від 2000 грн',
     idCard: 'pre-purchase-diagnostics',
   },
   {
-    icon: <BsBullseye className={styles.cardIcon} />,
+    icon: <MdOutlineMonitorHeart className={styles.cardIcon} />,
     title: 'Комп`ютерна діагностика',
     description: 'СТО "АЗР Південний" виконує комп`ютерну діагностику всіх систем автомобілів',
     price: 'від 600 грн',

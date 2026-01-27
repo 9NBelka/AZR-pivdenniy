@@ -1,33 +1,38 @@
-import {
-  FaWrench,
-  FaCog,
-  FaBullseye,
-  FaStethoscope,
-  FaDotCircle,
-  FaCar,
-  FaOilCan,
-} from 'react-icons/fa';
 import styles from './ServicesSection.module.scss';
-import { GrAction, GrCycle, GrServices, GrValidate } from 'react-icons/gr';
-import { BsDiagram3, BsDisc } from 'react-icons/bs';
+
+import {
+  FaCogs,
+  FaTools,
+  FaCarSide,
+  FaCarCrash,
+  FaBolt,
+  FaCarBattery,
+  FaOilCan,
+  FaFan,
+  FaGasPump,
+  FaLink,
+} from 'react-icons/fa';
+
+import { MdOutlineCarRepair, MdOutlineBuild } from 'react-icons/md';
+import { TbSteeringWheelFilled } from 'react-icons/tb';
 
 const services = [
   {
-    icon: <FaCog className={styles.cardIcon} />,
+    icon: <FaCogs className={styles.cardIcon} />,
     title: 'Заміна ременя ГРМ',
     description: 'СТО "АЗР Південний" виконує заміну комплектів ременів ГРМ.',
     price: 'від 4000 грн',
     idCard: 'timing-belt-replacement',
   },
   {
-    icon: <FaBullseye className={styles.cardIcon} />,
+    icon: <FaLink className={styles.cardIcon} />,
     title: 'Заміна ланцюга ГРМ',
     description: 'СТО "АЗР Південний" виконує заміну комплектів ланцюгів ГРМ.',
     price: 'від 6000 грн',
     idCard: 'timing-chain-replacement',
   },
   {
-    icon: <FaDotCircle className={styles.cardIcon} />,
+    icon: <FaCarSide className={styles.cardIcon} />,
     title: 'Регулювання розвалу-сходження',
     description:
       'Розвал-сходження – один із ключових аспектів догляду за автомобілем, який безпосередньо впливає на комфорт і безпеку',
@@ -35,7 +40,7 @@ const services = [
     idCard: 'wheel-alignment-adjustment',
   },
   {
-    icon: <FaCar className={styles.cardIcon} />,
+    icon: <MdOutlineCarRepair className={styles.cardIcon} />,
     title: 'Заміна амортизаторів',
     description:
       'Наші фахівці точно визначать і замінять вийшли з ладу амортизатори вашого автомобіля',
@@ -43,7 +48,7 @@ const services = [
     idCard: 'shock-absorber-replacement',
   },
   {
-    icon: <GrAction className={styles.cardIcon} />,
+    icon: <FaBolt className={styles.cardIcon} />,
     title: 'Ремонт електрики',
     description:
       'СТО "АЗР Південний" надає всі види послуг з технічного обслуговування, діагностики та ремонту електрообладнання автомобілів',
@@ -51,7 +56,7 @@ const services = [
     idCard: 'auto-electrical-repair',
   },
   {
-    icon: <GrServices className={styles.cardIcon} />,
+    icon: <FaTools className={styles.cardIcon} />,
     title: 'Ремонт двигуна',
     description:
       'СТО "АЗР Південний" виконує роботи будь-якої складності по ремонту бензинових і дизельних двигунів.',
@@ -59,7 +64,7 @@ const services = [
     idCard: 'engine-repair',
   },
   {
-    icon: <FaWrench className={styles.cardIcon} />,
+    icon: <FaCarCrash className={styles.cardIcon} />,
     title: 'Ремонт гальмівної системи',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту гальмівної системи',
@@ -67,7 +72,7 @@ const services = [
     idCard: 'brake-system-repair',
   },
   {
-    icon: <BsDiagram3 className={styles.cardIcon} />,
+    icon: <MdOutlineBuild className={styles.cardIcon} />,
     title: 'Ремонт ходової',
     description:
       'Наші фахівці точно визначать і усунуть несправність в підвісці вашого автомобіля.',
@@ -75,7 +80,7 @@ const services = [
     idCard: 'suspension-repair',
   },
   {
-    icon: <GrValidate className={styles.cardIcon} />,
+    icon: <FaFan className={styles.cardIcon} />,
     title: 'Ремонт системи кондиціонування',
     description:
       'Проводимо діагностику, технічне обслуговування, ремонт і заправку систем кондиціонування легкових і комерційних автомобілів.',
@@ -84,7 +89,7 @@ const services = [
   },
 
   {
-    icon: <FaOilCan className={styles.cardIcon} />,
+    icon: <FaGasPump className={styles.cardIcon} />,
     title: 'Ремонт паливних систем',
     description:
       'Ми надаємо всі види послуг з діагностики та ремонту паливних систем автомобілів в Харкові',
@@ -93,7 +98,7 @@ const services = [
   },
 
   {
-    icon: <BsDisc className={styles.cardIcon} />,
+    icon: <TbSteeringWheelFilled className={styles.cardIcon} />,
     title: 'Ремонт рульового управління',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту рульового управління.',
@@ -102,7 +107,7 @@ const services = [
   },
 
   {
-    icon: <GrCycle className={styles.cardIcon} />,
+    icon: <FaOilCan className={styles.cardIcon} />,
     title: 'Ремонт інжектора',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту систем уприскування палива',
