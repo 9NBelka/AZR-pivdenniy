@@ -46,5 +46,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script type="text/javascript">
+      (function (d, w, s) {
+        var widgetHash = '9b30iv4ftgdyaj08w5yo',
+          ctw = d.createElement(s);
+        ctw.type = 'text/javascript';
+        ctw.async = true;
+        ctw.src = '//widgets.binotel.com/calltracking/widgets/' + widgetHash + '.js';
+        var sn = d.getElementsByTagName(s)[0];
+        sn.parentNode.insertBefore(ctw, sn);
+      })(document, window, 'script');
+    </script>
   </body>
 </html>

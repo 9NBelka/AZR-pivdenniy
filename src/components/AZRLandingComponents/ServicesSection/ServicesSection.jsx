@@ -17,14 +17,14 @@ const services = [
     title: 'Заміна ременя ГРМ',
     description: 'СТО "АЗР Південний" виконує заміну комплектів ременів ГРМ.',
     price: 'від 4000 грн',
-    idCard: 'engine-repair',
+    idCard: 'timing-belt-replacement',
   },
   {
     icon: <FaBullseye className={styles.cardIcon} />,
     title: 'Заміна ланцюга ГРМ',
     description: 'СТО "АЗР Південний" виконує заміну комплектів ланцюгів ГРМ.',
     price: 'від 6000 грн',
-    idCard: 'transmission-repair',
+    idCard: 'timing-chain-replacement',
   },
   {
     icon: <FaDotCircle className={styles.cardIcon} />,
@@ -32,7 +32,7 @@ const services = [
     description:
       'Розвал-сходження – один із ключових аспектів догляду за автомобілем, який безпосередньо впливає на комфорт і безпеку',
     price: 'від 700 грн',
-    idCard: 'suspension-repair',
+    idCard: 'wheel-alignment-adjustment',
   },
   {
     icon: <FaCar className={styles.cardIcon} />,
@@ -40,7 +40,7 @@ const services = [
     description:
       'Наші фахівці точно визначать і замінять вийшли з ладу амортизатори вашого автомобіля',
     price: 'від 700 грн',
-    idCard: 'electrical-repair',
+    idCard: 'shock-absorber-replacement',
   },
   {
     icon: <GrAction className={styles.cardIcon} />,
@@ -48,7 +48,7 @@ const services = [
     description:
       'СТО "АЗР Південний" надає всі види послуг з технічного обслуговування, діагностики та ремонту електрообладнання автомобілів',
     price: 'від 500 грн',
-    idCard: 'brake-system-repair-and-maintenance',
+    idCard: 'auto-electrical-repair',
   },
   {
     icon: <GrServices className={styles.cardIcon} />,
@@ -56,7 +56,7 @@ const services = [
     description:
       'СТО "АЗР Південний" виконує роботи будь-якої складності по ремонту бензинових і дизельних двигунів.',
     price: 'від 20000 грн',
-    idCard: 'maintenance',
+    idCard: 'engine-repair',
   },
   {
     icon: <FaWrench className={styles.cardIcon} />,
@@ -64,7 +64,7 @@ const services = [
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту гальмівної системи',
     price: 'від 600 грн',
-    idCard: 'auto-parts',
+    idCard: 'brake-system-repair',
   },
   {
     icon: <BsDiagram3 className={styles.cardIcon} />,
@@ -72,7 +72,7 @@ const services = [
     description:
       'Наші фахівці точно визначать і усунуть несправність в підвісці вашого автомобіля.',
     price: 'від 500 грн',
-    idCard: 'auto-parts',
+    idCard: 'suspension-repair',
   },
   {
     icon: <GrValidate className={styles.cardIcon} />,
@@ -80,7 +80,7 @@ const services = [
     description:
       'Проводимо діагностику, технічне обслуговування, ремонт і заправку систем кондиціонування легкових і комерційних автомобілів.',
     price: 'від 1000 грн',
-    idCard: 'auto-parts',
+    idCard: 'air-conditioning-system-repair',
   },
 
   {
@@ -89,7 +89,7 @@ const services = [
     description:
       'Ми надаємо всі види послуг з діагностики та ремонту паливних систем автомобілів в Харкові',
     price: 'від 1000 грн',
-    idCard: 'auto-parts',
+    idCard: 'fuel-system-repair',
   },
 
   {
@@ -98,7 +98,7 @@ const services = [
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту рульового управління.',
     price: 'від 3500 грн',
-    idCard: 'auto-parts',
+    idCard: 'steering-system-repair',
   },
 
   {
@@ -107,7 +107,7 @@ const services = [
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту систем уприскування палива',
     price: 'від 800 грн',
-    idCard: 'auto-parts',
+    idCard: 'injector-repair',
   },
 ];
 
