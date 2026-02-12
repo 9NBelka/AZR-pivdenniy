@@ -30,6 +30,7 @@ const ContactFormSection = () => {
     phone: '',
     car: '',
     service: '',
+    vin: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
@@ -44,14 +45,20 @@ const ContactFormSection = () => {
     setIsSubmitting(true);
     setSuccessMessage('');
 
+    if (formData.vin && formData.vin.length !== 17) {
+      alert('VIN повинен містити рівно 17 символів');
+      return;
+    }
+
     try {
       const message = `
-      Новий запис на сервіс:
+Новий запис на сервіс:
 
-      👤 Ім'я: ${formData.name}
-      📱 Телефон: ${formData.phone}
-      🚗 Автомобіль: ${formData.car || 'Не вказано'}
-      ⚙️ Послуга: ${formData.service || 'Не вказано'}
+👤 Ім'я: ${formData.name}
+📱 Телефон: ${formData.phone}
+🚗 Автомобіль: ${formData.car || 'Не вказано'}
+🔢 VIN: ${formData.vin || 'Не вказано'}
+⚙️ Послуга: ${formData.service || 'Не вказано'}
     `;
 
       const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN_AZRPIVDENNY;
@@ -158,6 +165,35 @@ const ContactFormSection = () => {
                     onChange={(e) => handleInputChange('car', e.target.value)}
                     className={styles.input}
                   />
+                </div>
+
+                <div className={styles.formGroup}>
+                  <label htmlFor='vin' className={styles.label}>
+                    VIN номер
+                  </label>
+                  <input
+                    id='vin'
+                    placeholder='Наприклад: 3VWDX7AJ4BM361533'
+                    value={formData.vin}
+                    onChange={(e) => {
+                      let val = e.target.value.toUpperCase().replace(/[^0-9A-Z]/g, '');
+
+                      if (val.length > 17) {
+                        val = val.slice(0, 17);
+                      }
+
+                      handleInputChange('vin', val);
+                    }}
+                    maxLength={17}
+                    className={styles.input}
+                  />
+                  {/* <small className={styles.hint}>
+                    {formData.vin.length > 0 && formData.vin.length < 17
+                      ? `Залишилось ${17 - formData.vin.length} символів`
+                      : formData.vin.length === 17
+                        ? 'VIN введено повністю'
+                        : ''}
+                  </small> */}
                 </div>
 
                 <div className={styles.formGroup}>
