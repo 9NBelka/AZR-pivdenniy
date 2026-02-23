@@ -88,32 +88,32 @@ const services = [
     idCard: 'air-conditioning-system-repair',
   },
 
-  {
-    icon: <FaGasPump className={styles.cardIcon} />,
-    title: 'Ремонт паливних систем',
-    description:
-      'Ми надаємо всі види послуг з діагностики та ремонту паливних систем автомобілів в Харкові',
-    price: 'від 1000 грн',
-    idCard: 'fuel-system-repair',
-  },
+  // {
+  //   icon: <FaGasPump className={styles.cardIcon} />,
+  //   title: 'Ремонт паливних систем',
+  //   description:
+  //     'Ми надаємо всі види послуг з діагностики та ремонту паливних систем автомобілів в Харкові',
+  //   price: 'від 1000 грн',
+  //   idCard: 'fuel-system-repair',
+  // },
 
-  {
-    icon: <TbSteeringWheelFilled className={styles.cardIcon} />,
-    title: 'Ремонт рульового управління',
-    description:
-      'Всі види послуг з технічного обслуговування, діагностики та ремонту рульового управління.',
-    price: 'від 3500 грн',
-    idCard: 'steering-system-repair',
-  },
+  // {
+  //   icon: <TbSteeringWheelFilled className={styles.cardIcon} />,
+  //   title: 'Ремонт рульового управління',
+  //   description:
+  //     'Всі види послуг з технічного обслуговування, діагностики та ремонту рульового управління.',
+  //   price: 'від 3500 грн',
+  //   idCard: 'steering-system-repair',
+  // },
 
-  {
-    icon: <FaOilCan className={styles.cardIcon} />,
-    title: 'Ремонт інжектора',
-    description:
-      'Всі види послуг з технічного обслуговування, діагностики та ремонту систем уприскування палива',
-    price: 'від 800 грн',
-    idCard: 'injector-repair',
-  },
+  // {
+  //   icon: <FaOilCan className={styles.cardIcon} />,
+  //   title: 'Ремонт інжектора',
+  //   description:
+  //     'Всі види послуг з технічного обслуговування, діагностики та ремонту систем уприскування палива',
+  //   price: 'від 800 грн',
+  //   idCard: 'injector-repair',
+  // },
 ];
 
 const ServicesSection = () => {
