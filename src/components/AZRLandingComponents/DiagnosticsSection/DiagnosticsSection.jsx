@@ -112,7 +112,7 @@ const DiagnosticsSection = () => {
                 <div className={styles.cardTitle}>{diagnostic.title}</div>
               </div>
               <div className={styles.cardContent}>
-                <div className={styles.cardDescription}>{diagnostic.description}</div>
+                {/* <div className={styles.cardDescription}>{diagnostic.description}</div> */}
                 <div className={styles.price}>{diagnostic.price}</div>
               </div>
             </div>
