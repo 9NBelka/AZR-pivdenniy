@@ -21,7 +21,8 @@ const services = [
     },
   },
   {
-    icon: <FaLink className={styles.cardIcon} />,
+    // icon: <FaLink className={styles.cardIcon} />,
+    iconImage: './images/timing-chain-replacement-icon.png',
     title: 'Заміна ланцюга ГРМ',
     description: 'СТО "АЗР Південний" виконує заміну комплектів ланцюгів ГРМ.',
     price: 'від 6000 грн',
@@ -33,7 +34,8 @@ const services = [
     },
   },
   {
-    icon: <FaCarSide className={styles.cardIcon} />,
+    // icon: <FaCarSide className={styles.cardIcon} />,
+    iconImage: './images/wheel-alignment-adjustment-icon.png',
     title: 'Регулювання розвалу-сходження',
     description:
       'Розвал-сходження – один із ключових аспектів догляду за автомобілем, який безпосередньо впливає на комфорт і безпеку',
@@ -46,7 +48,8 @@ const services = [
     },
   },
   {
-    icon: <MdOutlineCarRepair className={styles.cardIcon} />,
+    // icon: <MdOutlineCarRepair className={styles.cardIcon} />,
+    iconImage: './images/shock-absorber-replacement-icon.png',
     title: 'Заміна амортизаторів',
     description:
       'Наші фахівці точно визначать і замінять вийшли з ладу амортизатори вашого автомобіля',
@@ -72,7 +75,8 @@ const services = [
     },
   },
   {
-    icon: <FaTools className={styles.cardIcon} />,
+    // icon: <FaTools className={styles.cardIcon} />,
+    iconImage: './images/engine-repair-icon.png',
     title: 'Ремонт двигуна',
     description:
       'СТО "АЗР Південний" виконує роботи будь-якої складності по ремонту бензинових і дизельних двигунів.',
@@ -85,7 +89,8 @@ const services = [
     },
   },
   {
-    icon: <FaCarCrash className={styles.cardIcon} />,
+    // icon: <FaCarCrash className={styles.cardIcon} />,
+    iconImage: './images/brake-system-repair-icon.png',
     title: 'Ремонт гальмівної системи',
     description:
       'Всі види послуг з технічного обслуговування, діагностики та ремонту гальмівної системи',
@@ -98,7 +103,8 @@ const services = [
     },
   },
   {
-    icon: <MdOutlineBuild className={styles.cardIcon} />,
+    // icon: <MdOutlineBuild className={styles.cardIcon} />,
+    iconImage: './images/suspension-repair-icon.png',
     title: 'Ремонт ходової',
     description:
       'Наші фахівці точно визначать і усунуть несправність в підвісці вашого автомобіля.',
@@ -155,7 +161,12 @@ const ServicesSection = () => {
               id={service.idCard}
               onClick={() => openModal(service)}>
               <div className={styles.cardHeader}>
-                <div className={styles.iconContainer}>{service.icon}</div>
+                {service.icon && <div className={styles.iconContainer}>{service.icon}</div>}
+                {service.iconImage && (
+                  <div className={styles.iconContainer}>
+                    <img src={service.iconImage} />
+                  </div>
+                )}
                 <div className={styles.cardTitle}>{service.title}</div>
               </div>
               <div className={styles.cardContent}>

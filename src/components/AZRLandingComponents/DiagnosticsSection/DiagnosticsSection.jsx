@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './DiagnosticsSection.module.scss';
-import { FaSearch, FaCar } from 'react-icons/fa';
+import { FaSearch, FaCar, FaOilCan } from 'react-icons/fa';
 
 import { MdOutlineMonitorHeart, MdOutlineSpeed } from 'react-icons/md';
 import { FiPhoneCall } from 'react-icons/fi';
@@ -8,7 +8,8 @@ import { BsX } from 'react-icons/bs';
 
 const diagnostics = [
   {
-    icon: <MdOutlineSpeed className={styles.cardIcon} />,
+    iconImage: './images/engine-diagnostics-icon.png',
+    // icon: <MdOutlineSpeed className={styles.cardIcon} />,
     title: 'Діагностика двигуна',
     description: 'СТО "АЗР Південний" виконує всі види діагностики бензинових і дизельних двигунів',
     price: 'від 500 грн',
@@ -20,7 +21,8 @@ const diagnostics = [
     },
   },
   {
-    icon: <FaSearch className={styles.cardIcon} />,
+    iconImage: './images/suspension-diagnostics-icon.png',
+    // icon: <FaSearch className={styles.cardIcon} />,
     title: 'Діагностика підвіски',
     description:
       'СТО "АЗР Південний" виконує всі види діагностики ходової частини автомобілів в Харкові',
@@ -33,7 +35,8 @@ const diagnostics = [
     },
   },
   {
-    icon: <FaCar className={styles.cardIcon} />,
+    iconImage: './images/pre-purchase-diagnostics-icon.png',
+    // icon: <FaCar className={styles.cardIcon} />,
     title: 'Діагностика перед покупкою',
     description: 'СТО "АЗР Південний" виконує діагностику всіх систем автомобілів.',
     price: 'від 2000 грн',
@@ -56,6 +59,18 @@ const diagnostics = [
         'Комп’ютерна діагностика на СТО АЗР Південний дозволяє швидко та точно визначити стан електронних систем вашого автомобіля. Ми зчитуємо й розшифровуємо коди несправностей усіх блоків керування, виконуємо їх скидання, кодування та адаптацію, а також аналізуємо поточні параметри роботи систем у порівнянні із заводськими нормами. Своєчасна діагностика допомагає виявити проблеми на ранній стадії, уникнути серйозних поломок і зменшити витрати на ремонт.',
     },
   },
+  {
+    icon: <FaOilCan className={styles.cardIcon} />,
+    title: 'Заміна масла',
+    description: 'СТО "АЗР Південний" виконує заміну масла та технічних рідин',
+    price: 'від 600 грн',
+    idCard: 'oil-change',
+    modal: {
+      image: './images/oil-change.jpg',
+      bigDescription:
+        'Заміна масла та технічних рідин на СТО АЗР Південний - це гарантія стабільної роботи та довговічності вашого автомобіля. Ми виконуємо заміну моторного й трансмісійного масел, гальмівної рідини, рідини ГУР та інших експлуатаційних матеріалів відповідно до регламенту виробника з обов’язковою заміною фільтрів. Підбираємо за допусками виробника, правильну в’язкість з урахуванням умов експлуатації та рекомендуємо оптимальні інтервали обслуговування. Використовуємо лише оригінальні рідини від офіційних постачальників і завдяки власному складу запчастин забезпечуємо швидке та якісне виконання робіт без зайвих витрат.',
+    },
+  },
 ];
 
 const DiagnosticsSection = () => {
@@ -73,7 +88,7 @@ const DiagnosticsSection = () => {
     <section id='diagnostics' className={styles.servicesSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Діагностика перед покупкою авто</h2>
+          <h2 className={styles.title}>Діагностика</h2>
           <p className={styles.description}>
             Професійна діагностика допоможе виявити приховані дефекти та уникнути дорогих ремонтів у
             майбутньому
@@ -88,7 +103,12 @@ const DiagnosticsSection = () => {
               id={diagnostic.idCard}
               onClick={() => openModal(diagnostic)}>
               <div className={styles.cardHeader}>
-                <div className={styles.iconContainer}>{diagnostic.icon}</div>
+                {diagnostic.icon && <div className={styles.iconContainer}>{diagnostic.icon}</div>}
+                {diagnostic.iconImage && (
+                  <div className={styles.iconContainer}>
+                    <img src={diagnostic.iconImage} />
+                  </div>
+                )}
                 <div className={styles.cardTitle}>{diagnostic.title}</div>
               </div>
               <div className={styles.cardContent}>
