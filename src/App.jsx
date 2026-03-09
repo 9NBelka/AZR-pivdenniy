@@ -3,6 +3,7 @@ import './App.scss';
 import { useEffect, Suspense } from 'react';
 
 import AZRLanding from './pages/AZRLanding/AZRLanding';
+import AZRLandingWhite from './pages/AZRLandingWhite/AZRLandingWhite';
 import ThanksPage from './pages/ThanksPage/ThanksPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
@@ -23,18 +24,27 @@ export default function App() {
     return null;
   }
 
+  const hostname = window.location.hostname;
+
+  let LandingComponent = AZRLanding;
+
+  if (hostname === 'white.merc.kharkov.ua') {
+    LandingComponent = AZRLandingWhite;
+  }
+
+  if (hostname === 'a.merc.kharkov.ua') {
+    LandingComponent = AZRLanding;
+  }
+
   return (
     <div>
-      {/* <CookieConsent /> */}
       <Suspense fallback={<div className='loading'>Загрузка...</div>}>
         <ScrollToHash />
         <Routes>
-          <>
-            <Route path='/' element={<AZRLanding />} />
-            <Route path='/thanks' element={<ThanksPage />} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-            <Route path='*' element={<NotFoundPage />} />
-          </>
+          <Route path='/' element={<LandingComponent />} />
+          <Route path='/thanks' element={<ThanksPage />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </div>
