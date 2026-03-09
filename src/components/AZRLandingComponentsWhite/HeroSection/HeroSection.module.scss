@@ -41,7 +41,7 @@
 .background {
   position: absolute;
   inset: 0;
-  background: url('/images/AZR-background-hero.jpg');
+  // background: url('/images/AZR-background-hero-white.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(23, 23, 23, 0.65), rgba(10, 10, 10, 0.65));
+  // background: rgba(150, 150, 150, 0.5);
 }
 
 .content {
@@ -76,12 +76,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffffd9;
   // backdrop-filter: blur(0.2vw);
-  box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2vw 0.3vw #0000001a;
 
-  background: linear-gradient(90deg, rgba(23, 23, 23, 0.4), rgba(10, 10, 10, 0.4));
-  box-shadow: 0 1vw 2vw -0.6vw #00000040;
+  // background: linear-gradient(90deg, rgba(23, 23, 23, 0.4), rgba(10, 10, 10, 0.4));
+  box-shadow: 0 0.1vw 0.4vw rgba(0, 0, 0, 0.2);
   border: 0.1vw solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.3vw);
   -webkit-backdrop-filter: blur(0.5vw);
@@ -109,7 +109,7 @@
 .title {
   width: 80%;
   font-size: 2.6vw;
-  color: var(--color-white);
+  color: #1f2937;
   font-family: var(--font-Inter);
   font-weight: var(--font-weight-bold);
   line-height: var(--font-lineh-small2);
@@ -149,7 +149,7 @@
 
 .subtitle {
   font-size: 1vw;
-  color: var(--color-gray);
+  color: #6b7280;
   font-family: var(--font-Inter);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-lineh-small);
@@ -179,7 +179,7 @@
 
 .secondaryText {
   font-size: 0.85vw;
-  color: var(--color-gray);
+  color: #6b7280;
   font-family: var(--font-Inter);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-lineh-small);
@@ -337,12 +337,12 @@
   & .locationIcon {
     width: 1vw;
     height: 1vw;
-    color: var(--color-gray);
+    color: #6b7280;
   }
 
   & .locationText {
     font-size: 0.85vw;
-    color: var(--color-gray);
+    color: #6b7280;
     font-family: var(--font-Inter);
     font-weight: var(--font-weight-normal);
     line-height: var(--font-lineh-small);
