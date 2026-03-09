@@ -41,8 +41,8 @@ export default function App() {
       <Suspense fallback={<div className='loading'>Загрузка...</div>}>
         <ScrollToHash />
         <Routes>
-          {/* <Route path='/' element={<LandingComponent />} /> */}
-          <Route path='/' element={<AZRLandingWhite />} />
+          <Route path='/' element={<LandingComponent />} />
+          {/* <Route path='/' element={<AZRLandingWhite />} /> */}
           <Route path='/thanks' element={<ThanksPage />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='*' element={<NotFoundPage />} />
