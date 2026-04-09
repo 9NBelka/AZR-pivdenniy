@@ -29,7 +29,8 @@ export default function App() {
   let LandingComponent = AZRLanding;
 
   if (hostname === 'white.merc.kharkov.ua') {
-    LandingComponent = AZRLandingWhite;
+   // LandingComponent = AZRLandingWhite;
+   LandingComponent = AZRLanding;
   }
 
   if (hostname === 'a.merc.kharkov.ua') {
